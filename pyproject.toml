@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "mockweatherservice"
+version = "0.1.0"
+description = ""
+authors = ["Bharath Padmaraju <bharath.k.padmaraju@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.71.0"
+pydantic = "^1.9.0"
+uvicorn = "^0.17.0"
+requests = "^2.27.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[tool.poetry.scripts]
+server = 'mockweatherservice.main:server'
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
