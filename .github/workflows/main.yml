@@ -34,9 +34,9 @@ jobs:
         # uses: appleboy/ssh-action@1d1b21ca96111b1eb4c03c21c14ebb971d2200f6
         uses: appleboy/ssh-action@v0.1.4
         with:
-          host: ${{ secrets=HOST }}
-          username: ${{ secrets=USERNAME }}
-          key: ${{ secrets=KEY }}
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.KEY }}
           script: |
             rm -rf CS561-WeatherMockAPI
             git clone git@github.com:bharathpadmaraju/CS561-WeatherMockAPI.git
