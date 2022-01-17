@@ -32,7 +32,7 @@ jobs:
       - name: SSH Remote Commands
         # You may pin to the exact commit or the version.
         # uses: appleboy/ssh-action@1d1b21ca96111b1eb4c03c21c14ebb971d2200f6
-        uses: appleboy/ssh-action@v0.1.4
+        uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
