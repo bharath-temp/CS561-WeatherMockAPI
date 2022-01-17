@@ -42,7 +42,7 @@ jobs:
             rm -rf CS561-WeatherMockAPI
             git clone git@github.com:bharathpadmaraju/CS561-WeatherMockAPI.git
             cd CS561-WeatherMockAPI
-            sudo docker stop myimage
-            sudo docker rm myimage
+            sudo docker stop mycontainer
+            sudo docker rm mycontainer
             sudo docker build -t myimage .
             sudo docker run -d --name mycontainer -p 80:80 myimage
