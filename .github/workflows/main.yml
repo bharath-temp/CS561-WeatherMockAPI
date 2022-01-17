@@ -37,6 +37,7 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.KEY }}
+          debug: true
           script: |
             rm -rf CS561-WeatherMockAPI
             git clone git@github.com:bharathpadmaraju/CS561-WeatherMockAPI.git
