@@ -36,20 +36,9 @@ jobs:
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
-          key: ${{ secrets.KEY }}
           script: |
             rm -rf CS561-WeatherMockAPI
             git clone git@github.com:bharathpadmaraju/CS561-WeatherMockAPI.git
             cd CS561-WeatherMockAPI
             sudo docker build -t myimage .
             sudo docker run -d --name mycontainer -p 80:80 myimage
-
-
-      
-      
-      
-      
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
