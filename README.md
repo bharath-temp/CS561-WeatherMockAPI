@@ -1,4 +1,4 @@
-[![Mock-WeatherService-API Actions Status](https://github.com/bharathpadmaraju/CS561-WeatherMockAPI/worflows/CI/badge.svg)](https://github.com/bharathpadmaraju/CS561-WeatherMockAPI/actions)
+[![CI](https://github.com/bharathpadmaraju/CS561-WeatherMockAPI/actions/workflows/main.yml/badge.svg?branch=master)](https://github.com/bharathpadmaraju/CS561-WeatherMockAPI/actions/workflows/main.yml)
 
 # Mock Weather Service
 
