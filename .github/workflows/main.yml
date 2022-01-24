@@ -45,4 +45,4 @@ jobs:
             sudo docker stop mycontainer
             sudo docker rm mycontainer
             sudo docker build -t myimage .
-            sudo docker run -d --name mycontainer -p 80:80 myimage
+            sudo docker run --env MY_AWS_ACCESS_ID --env MY_AWS_SECRET_KEY -d --name mycontainer -p 80:80 myimage
